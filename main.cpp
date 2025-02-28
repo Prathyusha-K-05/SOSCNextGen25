@@ -2,9 +2,11 @@
 using namespace std;
 
 int factorial(int n)
-{
+{ 
     int result = 1;
-    for (int i = 1; i <= n; i--)
+    if (n==0)
+      return result;
+    for (int i = n; i>=1; i--)
     {
         result *= i;
     }
